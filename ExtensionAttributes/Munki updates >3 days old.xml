@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><extensionAttribute>
+<displayName>Munki updates &gt;3 days old</displayName>
+<description/>
+<dataType>string</dataType>
+<scriptContentsMac>#!/bin/bash&#13;
+&#13;
+SOURCE="/Library/Updates"&#13;
+WAITINGUPDATES=0&#13;
+&#13;
+# Check for OS updates&#13;
+# list=$(ls $SOURCE | grep '[0-9]\{3\}-[0-9]\{5\}')&#13;
+# for folder in $list&#13;
+# do&#13;
+# 	if [[ $(find "$SOURCE/$folder" -mtime +3 -print) ]]; then&#13;
+#  		WAITINGUPDATES=1&#13;
+#    fi&#13;
+# done&#13;
+&#13;
+# Check for munki updates&#13;
+list=$(ls "/Library/Managed Installs/Cache/")&#13;
+for folder in $list&#13;
+do&#13;
+	if [[ $(find "/Library/Managed Installs/Cache/$folder" -mtime +3 -print) ]]; then&#13;
+  		WAITINGUPDATES=1&#13;
+  	fi&#13;
+done&#13;
+&#13;
+echo "&lt;result&gt;$WAITINGUPDATES&lt;/result&gt;"</scriptContentsMac>
+</extensionAttribute>
