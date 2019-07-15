@@ -27,7 +27,7 @@ This is build to work with Jamf Pro, Munki and SplashBuddy. Creative minds would
 
 #### Scripts and Extensions Attributes
 Upload the scripts and EA's to your JAMF Pro instance.
-You can find the files [here]()
+You can find the files on top of this page.
 
 #### Smart Groups
 Create the following smart groups
