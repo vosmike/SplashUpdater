@@ -70,9 +70,6 @@ else
 
 	echo "SUP: show dialog"
 
-## Place URL to logo used by the dialog
-## curl -o /tmp/Secrid_logo.png https://pbs.twimg.com/profile_images/760125118760779777/vo7D9wix_400x400.jpg
-
 ## JamfHelper window
 	Button=$("/Library/Application Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper" -windowType utility -title "Pending Updates" \
 -description "You have not installed last weeks software updates. These updates are important to keep your mac safe and secure. Please press 'Go To Safety' to log out and install these software updates." \
