@@ -27,7 +27,7 @@ This is build to work with Jamf Pro, Munki and SplashBuddy. Creative minds would
 
 #### Scripts and Extensions Attributes
 Upload the scripts and EA's to your JAMF Pro instance.
-You can find the files on top of this page.
+You can find the files at the top of this page.
 
 #### Smart Groups
 Create the following smart groups
@@ -73,18 +73,37 @@ This will put the Mac in the Smart Group 'Update Monitor'.
 Once in this Smart Group, the user will start receiving warnings about pending updates and is given a choice to 'Go to Safety' or 'Stay Unsafe'. This is triggered by the 'Update alert >3 days old' policy.
 Choosing 'Stay Unsafe' will add a value of '1' to the counter. Once this counter reaches the amount of '3', the maximum has been reached.
 This warning is poping up every two hours.
+> User hard at work, no time to update at the first warning.
+
+![](https://www.dropbox.com/s/9055cx0wpsn7yp4/update_message.gif?raw=1)
 
 ##### Step three
 The Mac is now moved to the Smart Group 'One click away from MAYHEM!'.
 A final warning is given to the user. Which in it's turn is triggered by the policy 'Final Warnings'.
 If they choose to 'Stay Unsafe' again, SplashBuddy takes over.
+> After three chances to install the updates, the final warnings policy will spam the user ever Check-in.
+
+![](https://www.dropbox.com/s/kbmpwoww3glnwyy/last_warning.png?raw=1)
+
 
 ##### Step four
 The final policy 'SplashUpdater' kicks off.
 Everything will force quit, the volume will be set to MAX and SplashBuddy will launch with Y.M.C.A. blasting through the headset or speakers.
 The scripts within this policy are there to make sure the user can close SplashBuddy. The only way to close it however, is to log the user out.
 As Munki is bootstrapped to the login window, updates will run immediately and will restart the Mac if needed.
+> We've had enough, time to tell the user it took to long. Fun starts.
+
+![](https://www.dropbox.com/s/rvzbs377mj1l776/ymca_in_yo_face.gif?raw=1)
 
 ### Special thanks
 As I wouldn't have been able to do this without SplashBuddy, I would like to thank Francois (@ftiff) and Damien (@Ethenyl).
 And as I'm not that great at scripting, a huge thanks to Sander Schram (@sanderschram on MacAdmins Slack) on helping me out on the scripting side.
+
+## Disclaimer
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
