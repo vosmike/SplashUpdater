@@ -19,7 +19,7 @@ Warning them that if they do not update, they force us to do it for them. Which 
 ### HOW
 Use Jamf Pro, Munki and SplashBuddy to build a framework that puts you back in control, the nice way.
 
-###WHAT
+### WHAT
 SplashUpdater
 
 ### Quick Start
@@ -57,7 +57,7 @@ Create the following policies
 
 + **Name**: SplashUpdater
   Trigger: outofdate
-  Run two scripts *'01sb_ghost_pkg'* with priority '**Before**'. And *'z02sb_ghost_pkg'* with priority '**After**''(courtesy of @ftiff)
+  Run two scripts *'01sb_ghost_pkg'* with priority '**Before**'. And *'z02sb_ghost_pkg'* with priority '**After**'(courtesy of @ftiff)
   Install SB_Updates.pkg
   Scope: Update Monitor
 
