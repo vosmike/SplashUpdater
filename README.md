@@ -75,7 +75,7 @@ Choosing 'Stay Unsafe' will add a value of '1' to the counter. Once this counter
 This warning is poping up every two hours.
 > User hard at work, no time to update at the first warning.
 
-![](https://www.dropbox.com/s/kq6ky5904xmu396/update_message_git.gif?raw=1)
+![](GIFs/update_message.gif)
 
 ##### Step three
 The Mac is now moved to the Smart Group 'One click away from MAYHEM!'.
@@ -93,7 +93,7 @@ The scripts within this policy are there to make sure the user can close SplashB
 As Munki is bootstrapped to the login window, updates will run immediately and will restart the Mac if needed.
 > We've had enough, time to tell the user it took to long. Fun starts.
 
-![](https://www.dropbox.com/s/e4uhv2ggeygg1p5/ymca_in_yo_face_git.gif?raw=1)
+![](GIFs/ymca_in_yo_face.gif)
 
 ### Special thanks
 As I wouldn't have been able to do this without SplashBuddy, I would like to thank Francois (@ftiff) and Damien (@Ethenyl).
