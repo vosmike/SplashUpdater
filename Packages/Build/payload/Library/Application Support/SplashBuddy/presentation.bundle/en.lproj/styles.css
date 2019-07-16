@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Meta Pro Black";
+  src: url('fonts/MetaOT-Norm.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Meta Pro Normal";
+  src: url('fonts/MetaOT-Norm.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Meta Pro Medium";
+  src: url('fonts/MetaOT-Medi.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #fff;
+  background-image: url("bg-20172_short.png");
+  background-repeat: no-repeat;
+  font-size: 1.0em;
+  font-family:"Meta Pro Normal", helvetica;
+  font-weight: normal;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width:570px;
+  height:540px
+}
+img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em
+}
+:link {
+  color: #0000FF;
+}
+:visited {
+  color: #0000FF;
+}
+a:hover {
+  color: #DE5961;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 1.75em;
+  font-weight: lighter;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+h3 {
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+.content {
+  padding: 5px 55px;
+  text-align: center;
+}
+.content2 {
+  width: 90%;
+}
+.content-columns {
+  /* Setting relative positioning allows for
+  absolute positioning for sub-classes */
+  position: relative;
+  padding-top: 1em;
+}
+.content-column-left {
+  /* Value for IE/Win; will be overwritten for other browsers */
+  width: 47%;
+  padding-right: 3%;
+  float: left;
+  padding-bottom: 2em;
+}
+.content-column-right {
+  /* Values for IE/Win; will be overwritten for other browsers */
+  width: 47%;
+  padding-left: 3%;
+  float: left;
+  padding-bottom: 2em;
+}
+.content-columns>.content-column-left, .content-columns>.content-column-right {
+  /* Non-IE/Win */
+}
+
+a:hover img {
+  border: 2px solid #DE5961;
+}

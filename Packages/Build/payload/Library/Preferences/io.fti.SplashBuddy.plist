@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationsArray</key>
+	<array>
+		<dict>
+			<key>canContinue</key>
+			<false/>
+			<key>description</key>
+			<string>You need to update!</string>
+			<key>displayName</key>
+			<string>Out of Date</string>
+			<key>iconRelativePath</key>
+			<string>munki.png</string>
+			<key>packageName</key>
+			<string>outofdate</string>
+		</dict>
+	</array>
+	<key>continueAction</key>
+	<string>logout</string>
+</dict>
+</plist>
