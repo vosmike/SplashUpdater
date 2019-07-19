@@ -31,34 +31,34 @@ You can find the files at the top of this page.
 
 #### Smart Groups
 Create the following smart groups
-+ **Name**: Update Monitor
-	*Criteria*
-	Munki update >3 days old (Extension Attribute)
-	Value: **'is'**
++ **Name**: Update Monitor\
+	*Criteria*\
+	Munki update >3 days old (Extension Attribute) \
+	Value: **'is'**\
 	1
 
-+ **Name**: One click away from MAYHEM!
-	*Criteria*
-	Get Delay Amount (Extension Attribute)
-	Value **'is'**
++ **Name**: One click away from MAYHEM!\
+	*Criteria*\
+	Get Delay Amount (Extension Attribute) \
+	Value **'is'**\
 	3
 
 #### Policies
 Create the following policies
-+ **Name**: Update alert >3 days old
-	Trigger: Ongoing
-	Run the script *'Munki update alert'* with priority '**After**'
++ **Name**: Update alert >3 days old\
+	Trigger: Ongoing\
+	Run the script *'Munki update alert'* with priority '**After**'\
 	Scope: Update Monitor (Created Smart Group)
 
-+ **Name**: Final Warnings
-  Trigger: Check-in, update_alert
-  Run the script *'Final_Warnings'* with priority '**After**'
++ **Name**: Final Warnings\
+  Trigger: Check-in, update_alert\
+  Run the script *'Final_Warnings'* with priority '**After**'\
   Scope: One click away from MAYHEM!
 
 + **Name**: SplashUpdater
-  Trigger: outofdate
-  Run two scripts *'01sb_ghost_pkg'* with priority '**Before**'. And *'z02sb_ghost_pkg'* with priority '**After**'(courtesy of @ftiff)
-  Install SB_Updates.pkg
+  Trigger: outofdate\
+  Run two scripts *'01sb_ghost_pkg'* with priority '**Before**'. And *'z02sb_ghost_pkg'* with priority '**After**'(courtesy of @ftiff) \
+  Install SB_Updates.pkg\
   Scope: Update Monitor
 
 #### How it works
